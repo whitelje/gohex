@@ -68,6 +68,10 @@ func (m *Memory) GetDataSegments() []DataSegment {
 	return segs
 }
 
+func (m *Memory) GetRawSegments() []*DataSegment {
+	return m.dataSegments
+}
+
 // Method to clear memory structure
 func (m *Memory) Clear() {
 	m.startAddress = 0
